@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: slategrey;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.question1 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.question2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.question3 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.question4 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.question5 {
+    text-align: center;
+    font-size: xx-large;
+}
