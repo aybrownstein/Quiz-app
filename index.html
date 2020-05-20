@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" type="A food quiz">
+    <title>Food-Quiz</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <main role="main" class="container">
+        <header role="banner" class="header">
+            <section>
+                <ul>
+                    <li class="size">Question:
+                        <span class="questionNumber">0</span>/5</li>
+                    <li class="size">Score:
+                        <span class="score">0</span>
+                    </li>
+                </ul>
+            </section>
+        </header>
+        <section role="region" class="nextQuestionBox">
+            <section class="startQuiz box">
+                <h1>Do You Know Your Foods?</h1>
+                <img src="broccoli-pic.jpg"><img src="string-bean-pic.jpg">
+                <button type="button" class="startButton button">Start</button>
+            </section>
+            <section class="questionBox box altBox"></section>
+            <section class="response box altBox"></section>
+        </section>
+    </main>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

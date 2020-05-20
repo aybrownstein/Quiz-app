@@ -1,5 +1,8 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 1%;
 }
 
 body {
@@ -11,31 +14,111 @@ img {
     width: 150px;
 }
 
-h1 {
+.header {
     text-align: center;
 }
 
-.question1 {
-    text-align: center;
-    font-size: xx-large;
+.header li {
+    display: inline-block;
+    margin: 1em;
+    list-style: none;
+    font-size: 1.3em;
 }
 
-.question2 {
-    text-align: center;
-    font-size: xx-large;
+.nextQuestionBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.1em #371d0d solid;
 }
 
-.question3 {
+.startQuiz,
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
-    font-size: xx-large;
+    margin: auto;
 }
 
-.question4 {
-    text-align: center;
-    font-size: xx-large;
+label {
+    display: block;
+    cursor: pointer;
+    margin-bottom: .5em;
+    padding: .5em;
 }
 
-.question5 {
-    text-align: center;
-    font-size: xx-large;
+legend {
+    margin-bottom: .5em;
+}
+
+.answerOption {
+    margin-top: 0.5em;
+}
+
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 3em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 320px) {
+    .nextQuestionBox {
+        width: 90%;
+        height: 31em;
+    }
+    .box {
+        width: 90%;
+        height: 90%;
+    }
+    .size {
+        font-size: .9em;
+        margin: .1em;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .nextQuestionBox {
+        width: 29.5em;
+        height: 31.5em;
+        padding-top: 2.6em;
+        padding-bottom: 2.6em;
+    }
+    .box {
+        width: 85%;
+        height: 98%;
+    }
+    .size {
+        font-size: .9em;
+    }
+    legend {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    .header li {
+        margin: 1em;
+        font-size: 1.3em;
+    }
+    .nextQuestionBox {
+        width: 35em;
+        height: 38em;
+    }
+    .box {
+        width: 85%;
+        height: 95%;
+    }
+    legend {
+        font-size: 1.3em;
+    }
+    .size {
+        font-size: 1em;
+    }
 }
