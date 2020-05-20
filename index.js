@@ -134,7 +134,7 @@ function createThing(questionIndex) {
         <span>${answerValue}</span> </label>
         `).appendTo(fieldSelector);
     });
-    $(`<button type="submit" class="submitButton button"> SUBMIT</button>
+    $(`<button type="submit" class="submitButton button"> SUBMIT</button> bhg
     `).appendTo(fieldSelector);
     return formMaker;
 }
