@@ -79,7 +79,7 @@ function updateQuestionNumber() {
 function updateImg(questionKey) {
     $('img').remove();
     if (!!STORE[questionKey].imgSrc) {
-        $('.questionBox').append(`<img src="${STORE[questionKey].imgSrc}" />`);
+        $('.questionBox').append(`<img src="${STORE[questionKey].imgSrc}" >`);
     }
 }
 
@@ -93,15 +93,6 @@ function resetStats() {
     $('.questionNumber').text(0);
 }
 
-function startQuiz() {
-    $('.altBox').hide();
-    $('.startQuiz').on('click', '.startButton', function(event) {
-        $('.startQuiz').hide();
-        $('.questionNumber').text(1);
-        $('.questionBox').show();
-        $('.questionBox').prepend(generateQuestion());
-    });
-}
 
 function submitAnswer() {
     $('.questionNumberBox').on('submit', function(event) {
@@ -118,6 +109,18 @@ function submitAnswer() {
         }
     });
 }
+
+function startQuiz() {
+    $('.altBox').hide();
+    $('.startQuiz').on('click', '.startButton', function(event) {
+        $('.startQuiz').hide();
+        $('.questionNumber').text(1);
+        $('.questionBox').show();
+        $('.questionBox').prepend(generateQuestion());
+        submitAnswer();
+    });
+}
+
 
 function createThing(questionIndex) {
     let formMaker = $(`<form>
@@ -138,6 +141,7 @@ function createThing(questionIndex) {
     `).appendTo(fieldSelector);
     return formMaker;
 }
+
 
 function correctAnswer() {
     $('.response').html(
