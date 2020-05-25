@@ -57,6 +57,18 @@ const STORE = [{
 let score = 0;
 let questionNumber = 0;
 
+function startQuiz() {
+    $('.altBox').hide();
+    $('.startQuiz').on('click', '.startButton', function(event) {
+        $('.startQuiz').hide();
+        $('.questionNumber').text(1);
+        $('.questionBox').show();
+        $('.questionBox').prepend(generateQuestion());
+
+    });
+}
+
+
 function generateQuestion() {
     if (questionNumber < STORE.length) {
         return createThing(questionNumber);
@@ -95,7 +107,7 @@ function resetStats() {
 
 
 function submitAnswer() {
-    $('.questionNumberBox').on('submit', function(event) {
+    $('.nextQuestionBox').on('submit', function(event) {
         event.preventDefault();
         $('.altBox').hide();
         $('.response').show();
@@ -110,16 +122,6 @@ function submitAnswer() {
     });
 }
 
-function startQuiz() {
-    $('.altBox').hide();
-    $('.startQuiz').on('click', '.startButton', function(event) {
-        $('.startQuiz').hide();
-        $('.questionNumber').text(1);
-        $('.questionBox').show();
-        $('.questionBox').prepend(generateQuestion());
-        submitAnswer();
-    });
-}
 
 
 function createThing(questionIndex) {
@@ -166,6 +168,7 @@ function nextQuestion() {
         $('.questionBox').show();
         updateQuestionNumber();
         $('.questionBox form').replaceWith(generatequestion());
+
     });
 }
 
