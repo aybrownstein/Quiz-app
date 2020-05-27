@@ -64,7 +64,7 @@ function startQuiz() {
         $('.questionNumber').text(1);
         $('.questionBox').show();
         $('.questionBox').prepend(generateQuestion());
-
+        submitAnswer();
     });
 }
 
@@ -163,7 +163,7 @@ function wrongAnswer() {
 }
 
 function nextQuestion() {
-    $('.questionNumberBox').on('click', '.nextButton', function(event) {
+    $('.nextQuestionBox').on('click', '.nextButton', function(event) {
         $('.altBox').hide();
         $('.questionBox').show();
         updateQuestionNumber();
