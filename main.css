@@ -112,6 +112,12 @@ legend {
         padding-top: 2.6em;
         padding-bottom: 2.6em;
     }
+    img {
+        height: 150px;
+        width: 150px;
+        position: relative;
+        bottom: 100px;
+    }
     .box {
         width: 85%;
         height: 98%;
@@ -121,6 +127,10 @@ legend {
     }
     legend {
         font-size: 1em;
+    }
+    .submitButton {
+        position: relative;
+        bottom: -300px;
     }
 }
 
