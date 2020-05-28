@@ -167,7 +167,7 @@ function nextQuestion() {
         $('.altBox').hide();
         $('.questionBox').show();
         updateQuestionNumber();
-        $('.questionBox form').replaceWith(generatequestion());
+        $('.questionBox form').replaceWith(generateQuestion());
 
     });
 }
