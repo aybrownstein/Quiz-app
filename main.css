@@ -12,6 +12,8 @@ body {
 img {
     height: 150px;
     width: 150px;
+    position: relative;
+    bottom: 150px;
 }
 
 .header {
@@ -66,6 +68,16 @@ legend {
     height: 3em;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+.submitButton {
+    position: relative;
+    bottom: -325px;
+}
+
+.restartButton {
+    display: none;
+    margin-bottom: .5em;
 }
 
 @media only screen and (min-width: 320px) {

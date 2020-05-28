@@ -59,6 +59,7 @@ let questionNumber = 0;
 
 function startQuiz() {
     $('.altBox').hide();
+    $('.restartButton').hide();
     $('.startQuiz').on('click', '.startButton', function(event) {
         $('.startQuiz').hide();
         $('.questionNumber').text(1);
@@ -71,10 +72,13 @@ function startQuiz() {
 
 function generateQuestion() {
     if (questionNumber < STORE.length) {
+        updateImg(questionNumber);
         return createThing(questionNumber);
+
     } else {
         $('.questionBox').hide();
         $('.questionNumber').text(5);
+        $('.restartButton').show();
     }
 }
 
@@ -95,8 +99,8 @@ function updateImg(questionKey) {
     }
 }
 
-updateImg(0);
-updateImg(1);
+
+
 
 function resetStats() {
     score = 0;
@@ -154,7 +158,7 @@ function correctAnswer() {
 }
 
 function wrongAnswer() {
-    $('.respnse').html(
+    $('.response').html(
         `<h3>Sorry, wrong answer</h3>
         <p class="size">It's actually:</p>
         <p class="size">${STORE[questionNumber].correctAnswer}</p>
@@ -178,6 +182,7 @@ function restartQuiz() {
         resetStats();
         $('.altBox').hide();
         $('.startQuiz').show();
+        $('.restartButton').hide();
     });
 }
 
