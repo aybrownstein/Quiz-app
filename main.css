@@ -1,4 +1,4 @@
-* {
+    * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -12,8 +12,8 @@ body {
 img {
     height: 150px;
     width: 150px;
-    position: relative;
-    bottom: 150px;
+    position: absolute;
+    top: 300px;
 }
 
 .header {
@@ -71,8 +71,8 @@ legend {
 }
 
 .submitButton {
-    position: relative;
-    bottom: -325px;
+    position: absolute;
+    top: 500px;
 }
 
 .restartButton {
@@ -128,29 +128,39 @@ legend {
     legend {
         font-size: 1em;
     }
+    img {
+        position: absolute;
+        top: 325px;
+    }
     .submitButton {
-        position: relative;
-        bottom: -300px;
+        position: absolute;
+        top: 500px;
     }
-}
-
-@media only screen and (min-width: 880px) {
-    .header li {
-        margin: 1em;
-        font-size: 1.3em;
+    @media only screen and (min-width: 880px) {
+        .header li {
+            margin: 1em;
+            font-size: 1.3em;
+        }
+        .nextQuestionBox {
+            width: 35em;
+            height: 38em;
+        }
+        .box {
+            width: 85%;
+            height: 95%;
+        }
+        legend {
+            font-size: 1.3em;
+        }
+        .size {
+            font-size: 1em;
+        }
+        img {
+            position: absolute;
+            top: 350px;
+        }
+        .submitButton {
+            position: absolute;
+            top: 550px;
+        }
     }
-    .nextQuestionBox {
-        width: 35em;
-        height: 38em;
-    }
-    .box {
-        width: 85%;
-        height: 95%;
-    }
-    legend {
-        font-size: 1.3em;
-    }
-    .size {
-        font-size: 1em;
-    }
-}
