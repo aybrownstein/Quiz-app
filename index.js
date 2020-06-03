@@ -79,6 +79,7 @@ function generateQuestion() {
         $('.questionBox').hide();
         $('.questionNumber').text(5);
         $('.restartButton').show();
+        ending();
     }
 }
 
@@ -174,6 +175,13 @@ function nextQuestion() {
         $('.questionBox form').replaceWith(generateQuestion());
 
     });
+}
+
+function ending() {
+    $('.end').show();
+    return $('.end').html(
+        `<h3>Your score is ${score}</h3>`
+    );
 }
 
 function restartQuiz() {
