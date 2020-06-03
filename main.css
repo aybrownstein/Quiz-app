@@ -89,19 +89,9 @@
             width: 90%;
             height: 90%;
         }
-        img {
-            height: 150px;
-            width: 150px;
-            position: relative;
-            bottom: 45px;
-        }
         .size {
             font-size: .9em;
             margin: .1em;
-        }
-        .submitButton {
-            position: relative;
-            bottom: -270px;
         }
     }
     
