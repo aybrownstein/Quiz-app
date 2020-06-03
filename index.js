@@ -191,6 +191,7 @@ function restartQuiz() {
         $('.altBox').hide();
         $('.startQuiz').show();
         $('.restartButton').hide();
+        $('.end').hide();
     });
 }
 
