@@ -6,7 +6,8 @@
     }
     
     body {
-        background-color: slategrey;
+        background-color: rgb(16, 30, 229);
+        color: rgb(127, 255, 212);
     }
     
     img {
@@ -25,6 +26,13 @@
         margin: 1em;
         list-style: none;
         font-size: 1.3em;
+    }
+    
+    h1,
+    h3,
+    legend {
+        margin-top: 1em;
+        font-size: 3em;
     }
     
     .nextQuestionBox {
@@ -89,6 +97,12 @@
             width: 90%;
             height: 90%;
         }
+        h1,
+        h3,
+        legend {
+            margin-top: 1.5em;
+            font-size: 1em;
+        }
         .size {
             font-size: .9em;
             margin: .1em;
@@ -111,6 +125,12 @@
         .box {
             width: 85%;
             height: 98%;
+        }
+        h1,
+        h3,
+        legend {
+            margin-top: 1em;
+            font-size: 2em;
         }
         .size {
             font-size: .9em;
