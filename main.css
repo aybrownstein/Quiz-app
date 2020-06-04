@@ -28,13 +28,6 @@
         font-size: 1.3em;
     }
     
-    h1,
-    h3,
-    legend {
-        margin-top: 1em;
-        font-size: 3em;
-    }
-    
     .nextQuestionBox {
         display: flex;
         flex-direction: column;
@@ -63,6 +56,7 @@
     }
     
     legend {
+        margin-top: 1em;
         margin-bottom: .5em;
     }
     
@@ -100,6 +94,7 @@
         h1,
         h3,
         legend {
+            padding-top: 1em;
             margin-top: 1.5em;
             font-size: 1em;
         }
@@ -129,14 +124,12 @@
         h1,
         h3,
         legend {
+            padding-top: 0;
             margin-top: 1em;
-            font-size: 2em;
+            font-size: 1.5em;
         }
         .size {
             font-size: .9em;
-        }
-        legend {
-            font-size: 1em;
         }
         img {
             position: absolute;
@@ -159,8 +152,12 @@
                 width: 85%;
                 height: 95%;
             }
+            h1,
+            h3,
             legend {
-                font-size: 1.3em;
+                padding-top: 0;
+                margin-top: 1em;
+                font-size: 2em;
             }
             .size {
                 font-size: 1em;
