@@ -65,7 +65,6 @@ function startQuiz() {
         $('.questionNumber').text(1);
         $('.questionBox').show();
         $('.questionBox').prepend(generateQuestion());
-        submitAnswer();
     });
 }
 
