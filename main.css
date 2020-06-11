@@ -14,7 +14,7 @@
         height: 150px;
         width: 150px;
         position: absolute;
-        top: 300px;
+        top: 350px;
     }
     
     .header {
@@ -75,7 +75,7 @@
     
     .submitButton {
         position: absolute;
-        top: 500px;
+        top: 525px;
     }
     
     .restartButton {
@@ -126,8 +126,8 @@
         img {
             height: 150px;
             width: 150px;
-            position: relative;
-            bottom: 100px;
+            position: absolute;
+            top: 360px;
         }
         .box {
             width: 85%;
@@ -152,10 +152,7 @@
         .size {
             font-size: .9em;
         }
-        img {
-            position: absolute;
-            top: 360px;
-        }
+        img {}
         .submitButton {
             position: absolute;
             top: 525px;
