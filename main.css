@@ -7,7 +7,7 @@
     
     body {
         background-color: rgb(16, 30, 229);
-        color: rgb(127, 255, 212);
+        color: rgb(14, 34, 27);
     }
     
     img {
@@ -25,6 +25,7 @@
         display: inline-block;
         margin: 1em;
         list-style: none;
+        color: rgb(127, 255, 212);
         font-size: 1.3em;
     }
     
@@ -35,7 +36,7 @@
         margin-top: 3em;
         margin-left: auto;
         margin-right: auto;
-        border: 0.1em #371d0d solid;
+        border: 0.5em #1ecf59 solid;
     }
     
     .startQuiz,
@@ -86,17 +87,27 @@
         .nextQuestionBox {
             width: 90%;
             height: 31em;
+            background-color: #EEA0E3;
         }
         .box {
             width: 90%;
             height: 90%;
+            background-color: #EEA0E3;
         }
-        h1,
-        h3,
+        h1 {
+            padding-top: 1em;
+            margin-top: 1.5em;
+            font-size: 2.2em;
+        }
+        h3 {
+            padding-top: 1em;
+            margin-top: 1.5em;
+            font-size: 2em;
+        }
         legend {
             padding-top: 1em;
             margin-top: 1.5em;
-            font-size: 1em;
+            font-size: 1.5em;
         }
         .size {
             font-size: .9em;
@@ -110,6 +121,7 @@
             height: 31.5em;
             padding-top: 2.6em;
             padding-bottom: 2.6em;
+            background-color: #EEA0E3;
         }
         img {
             height: 150px;
@@ -120,55 +132,76 @@
         .box {
             width: 85%;
             height: 98%;
+            background-color: #EEA0E3;
         }
-        h1,
-        h3,
+        h1 {
+            padding-top: 0;
+            margin-top: 1em;
+            font-size: 2.5em;
+        }
+        h3 {
+            padding-top: 0;
+            margin-top: 1em;
+            font-size: 2.2em;
+        }
         legend {
             padding-top: 0;
             margin-top: 1em;
-            font-size: 1.5em;
+            font-size: 1.9em;
         }
         .size {
             font-size: .9em;
         }
         img {
             position: absolute;
-            top: 325px;
+            top: 360px;
         }
         .submitButton {
             position: absolute;
-            top: 500px;
+            top: 525px;
         }
         @media only screen and (min-width: 880px) {
             .header li {
                 margin: 1em;
-                font-size: 1.3em;
+                font-size: 2em;
             }
             .nextQuestionBox {
                 width: 35em;
                 height: 38em;
+                background-color: #EEA0E3;
             }
             .box {
                 width: 85%;
                 height: 95%;
+                background-color: #EEA0E3;
             }
-            h1,
-            h3,
+            h1 {
+                padding-top: 0;
+                margin-top: 1em;
+                font-size: 3em;
+            }
+            h3 {
+                padding-top: 0;
+                margin-top: 1em;
+                font-size: 3em;
+            }
             legend {
                 padding-top: 0;
                 margin-top: 1em;
                 font-size: 2em;
             }
             .size {
-                font-size: 1em;
+                font-size: 1.5em;
             }
             img {
+                height: 175px;
+                width: 175px;
                 position: absolute;
-                top: 350px;
+                top: 475px;
             }
             .submitButton {
                 position: absolute;
-                top: 550px;
+                top: 675px;
             }
         }
     }
